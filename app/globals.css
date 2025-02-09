@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 67, 48, 43;
+  --background-rgb: 253, 248, 246;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 253, 248, 246;
+    --background-rgb: 67, 48, 43;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+/* Form Styles */
+input,
+textarea {
+  @apply border-2 border-brown-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brown-500 focus:border-transparent;
+}
+
+/* Button Styles */
+button {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+/* Link Styles */
+a {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold;
+}
+
+/* Container Styles */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Section Styles */
+section {
+  @apply py-12 sm:py-16 lg:py-20;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden;
+}
+
+/* Grid Styles */
+.grid-container {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+/* Animation Styles */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Image Styles */
+.responsive-image {
+  @apply w-full h-auto object-cover;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-brown-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brown-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-brown-500;
+}
