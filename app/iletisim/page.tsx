@@ -105,25 +105,15 @@ export default function ContactPage() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-semibold mb-2 text-brown-800">
-                  Adres
-                </h3>
-                <p className="text-brown-600">
-                  Maslak Mah. Büyükdere Cad. No:123
-                  <br />
-                  Sarıyer / İstanbul
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2 text-brown-800">
                   Telefon
                 </h3>
-                <p className="text-brown-600">+90 (212) 123 45 67</p>
+                <p className="text-brown-600">0532 286 20 80</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2 text-brown-800">
                   E-posta
                 </h3>
-                <p className="text-brown-600">info@kayzer.com.tr</p>
+                <p className="text-brown-600">kayzerdanismanlik@outlook.com.tr</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2 text-brown-800">

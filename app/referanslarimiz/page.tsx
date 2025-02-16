@@ -13,46 +13,18 @@ export const metadata: Metadata = {
 
 const references = [
   {
-    name: "ABC Cafe & Restaurant",
-    image: "/images/references/cafe-1.jpg",
-    description: "Modern konsept tasarımı ve operasyon yönetimi danışmanlığı sunduk.",
-    duration: "6 ay",
-    type: "cafe",
-  },
-  {
-    name: "XYZ Fine Dining",
+    name: "Pizzzen Sınırsız Pizza",
     image: "/images/references/restaurant-1.jpg",
-    description: "Lüks restoran konsepti ve personel eğitimi konusunda danışmanlık verdik.",
+    description: "Konsept geliştirme, personel eğitimi, menü hazırlık, reçete hazırlık, cost control hizmetleri gibi temel hizmetlerin hepsini sağladığımız bir işletme.",
     duration: "12 ay",
     type: "restaurant",
   },
   {
-    name: "123 Bistro",
+    name: "Zen Burger",
     image: "/images/references/bistro-1.jpg",
-    description: "Menü geliştirme ve maliyet optimizasyonu çalışmaları yaptık.",
-    duration: "9 ay",
-    type: "bistro",
-  },
-  {
-    name: "DEF Coffee Shop",
-    image: "/images/references/cafe-2.jpg",
-    description: "Kahve dükkanı konsepti ve marka kimliği oluşturduk.",
-    duration: "8 ay",
-    type: "cafe",
-  },
-  {
-    name: "GHI Restaurant",
-    image: "/images/references/restaurant-2.jpg",
-    description: "Restoran iş süreçleri ve verimlilik artırma danışmanlığı sunduk.",
-    duration: "10 ay",
+    description: "Personel Eğitimi, reçete hazırlık, cost control ve restoran hijyen denetimi gibi temel hizmetleri sağladık.",
+    duration: "6 ay",
     type: "restaurant",
-  },
-  {
-    name: "JKL Cafe",
-    image: "/images/references/cafe-3.jpg",
-    description: "Dijital pazarlama ve müşteri deneyimi optimizasyonu yaptık.",
-    duration: "15 ay",
-    type: "cafe",
   },
 ];
 
@@ -71,7 +43,7 @@ export default function ReferencesPage() {
       {/* Referanslar Grid */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {references.map((reference, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <div className="relative h-64">
@@ -83,15 +55,12 @@ export default function ReferencesPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-brown-800">
+                  <h3 className="text-2xl font-semibold mb-3 text-brown-800">
                     {reference.name}
                   </h3>
-                  <p className="text-brown-600 mb-4">
+                  <p className="text-brown-600 mb-4 text-lg">
                     {reference.description}
                   </p>
-                  <div className="text-sm text-brown-500">
-                    Proje Süresi: {reference.duration}
-                  </div>
                 </div>
               </div>
             ))}
@@ -99,14 +68,14 @@ export default function ReferencesPage() {
         </div>
       </section>
 
-      {/* Müşteri Yorumları */}
+      {/* Müşteri Yorumları Section - Şimdilik Gizli
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-brown-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-brown-900">
             Müşteri Yorumları
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Yorum 1 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Yorum 1 */}{/*
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
                 <div className="relative w-12 h-12 mr-4">
@@ -119,7 +88,7 @@ export default function ReferencesPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-brown-800">Ali Yıldız</h3>
-                  <p className="text-sm text-brown-600">ABC Cafe & Restaurant Sahibi</p>
+                  <p className="text-sm text-brown-600">Pizzzen Sınırsız Pizza Kurucu</p>
                 </div>
               </div>
               <p className="text-brown-600 italic">
@@ -129,7 +98,7 @@ export default function ReferencesPage() {
               </p>
             </div>
 
-            {/* Yorum 2 */}
+            {/* Yorum 2 */}{/*
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
                 <div className="relative w-12 h-12 mr-4">
@@ -142,7 +111,7 @@ export default function ReferencesPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-brown-800">Zeynep Ak</h3>
-                  <p className="text-sm text-brown-600">XYZ Fine Dining İşletme Müdürü</p>
+                  <p className="text-sm text-brown-600">Zen Burger İşletme Müdürü</p>
                 </div>
               </div>
               <p className="text-brown-600 italic">
@@ -151,32 +120,10 @@ export default function ReferencesPage() {
                 gözle görülür şekilde arttı.&quot;
               </p>
             </div>
-
-            {/* Yorum 3 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="flex items-center mb-4">
-                <div className="relative w-12 h-12 mr-4">
-                  <Image
-                    src="/api/avatar?name=Murat Demir&bg=%23a18072&size=100"
-                    alt="Murat Demir"
-                    fill
-                    className="rounded-full object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-brown-800">Murat Demir</h3>
-                  <p className="text-sm text-brown-600">123 Bistro Kurucu Ortağı</p>
-                </div>
-              </div>
-              <p className="text-brown-600 italic">
-                &quot;Menü optimizasyonu ve maliyet yönetimi konusundaki önerileri
-                sayesinde karlılığımız önemli ölçüde arttı. Profesyonel yaklaşımları
-                için teşekkür ederiz.&quot;
-              </p>
-            </div>
           </div>
         </div>
       </section>
+      */}
     </div>
   );
 } 

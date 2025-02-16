@@ -14,11 +14,11 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/api/logo"
+              src="/images/logos/kayzer.png"
               alt="Kayzer Danışmanlık Logo"
-              width={180}
-              height={48}
-              className="h-12 w-auto"
+              width={300}
+              height={80}
+              className="h-20 w-auto"
               priority
             />
           </Link>

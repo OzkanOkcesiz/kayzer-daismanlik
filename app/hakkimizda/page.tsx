@@ -116,14 +116,14 @@ export default function AboutPage() {
             <div className="text-center">
               <div className="relative w-32 h-32 mx-auto mb-4">
                 <Image
-                  src="/api/avatar?name=Ahmet Yılmaz&bg=%23967669"
-                  alt="Ahmet Yılmaz"
+                  src="/api/avatar?name=Burak Gürler&bg=%23967669"
+                  alt="Burak Gürler"
                   fill
                   className="rounded-full object-cover"
                 />
               </div>
               <h3 className="text-xl font-semibold text-brown-800">
-                Ahmet Yılmaz
+                Burak Gürler
               </h3>
               <p className="text-brown-600">Genel Müdür</p>
             </div>
@@ -132,14 +132,14 @@ export default function AboutPage() {
             <div className="text-center">
               <div className="relative w-32 h-32 mx-auto mb-4">
                 <Image
-                  src="/api/avatar?name=Ayşe Kaya&bg=%23846358"
-                  alt="Ayşe Kaya"
+                  src="/api/avatar?name=Fehmi Yıldız&bg=%23846358"
+                  alt="Fehmi Yıldız"
                   fill
                   className="rounded-full object-cover"
                 />
               </div>
               <h3 className="text-xl font-semibold text-brown-800">
-                Ayşe Kaya
+                Fehmi Yıldız
               </h3>
               <p className="text-brown-600">Proje Yöneticisi</p>
             </div>
@@ -148,14 +148,14 @@ export default function AboutPage() {
             <div className="text-center">
               <div className="relative w-32 h-32 mx-auto mb-4">
                 <Image
-                  src="/api/avatar?name=Mehmet Demir&bg=%23a18072"
-                  alt="Mehmet Demir"
+                  src="/api/avatar?name=İbrahim Ergin&bg=%23a18072"
+                  alt="İbrahim Ergin"
                   fill
                   className="rounded-full object-cover"
                 />
               </div>
               <h3 className="text-xl font-semibold text-brown-800">
-                Mehmet Demir
+                İbrahim Ergin
               </h3>
               <p className="text-brown-600">Danışman</p>
             </div>

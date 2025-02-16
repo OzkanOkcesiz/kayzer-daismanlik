@@ -34,7 +34,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-16 text-brown-900">
             Danışmanlık Hizmetlerimiz
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Hizmet 1 */}
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <div className="w-16 h-16 bg-brown-100 rounded-lg flex items-center justify-center mb-6">
@@ -110,6 +110,31 @@ export default function Home() {
               <p className="text-brown-600">
                 Dijital pazarlama ve sosyal medya yönetimi ile müşteri sayınızı
                 artırıyor, marka bilinirliğinizi güçlendiriyoruz.
+              </p>
+            </div>
+
+            {/* Hizmet 4 - Kalite ve Standartların Sürdürülebilirliği */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="w-16 h-16 bg-brown-100 rounded-lg flex items-center justify-center mb-6">
+                <svg
+                  className="w-8 h-8 text-brown-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-brown-800">
+                Kalite ve Standartların Sürdürülebilirliği
+              </h3>
+              <p className="text-brown-600">
+                İşletmenizi getirdiğiniz seviyede tutmak ve standartlarınızı koruyabilmek için menü, personel, reçete ve restoran hijyeni konusunda denetim hizmetleri sağlıyoruz.
               </p>
             </div>
           </div>

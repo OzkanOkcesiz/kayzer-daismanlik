@@ -44,7 +44,16 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <body className={inter.className}>
-        <Toaster position="top-right" />
+        <Toaster 
+          position="bottom-right"
+          toastOptions={{
+            duration: 3000,
+            style: {
+              background: '#43302b',
+              color: '#fff',
+            },
+          }}
+        />
         <Header />
         {children}
         <Footer />
