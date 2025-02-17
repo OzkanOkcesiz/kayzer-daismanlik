@@ -103,7 +103,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/kayzerdanismanlik/#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-brown-200 hover:text-white transition-colors"
