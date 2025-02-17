@@ -21,7 +21,7 @@ const references = [
   },
   {
     name: "Zen Burger",
-    image: "/images/references/bistro-1.jpg",
+    image: "/images/references/zenburger.jpeg",
     description: "Personel Eğitimi, reçete hazırlık, cost control ve restoran hijyen denetimi gibi temel hizmetleri sağladık.",
     duration: "6 ay",
     type: "restaurant",

@@ -42,8 +42,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-bold mb-6 text-brown-900">Vizyonumuz</h2>
             <p className="text-brown-600 leading-relaxed">
-              Türkiye&apos;nin önde gelen danışmanlık şirketlerinden biri olarak,
-              sektörde öncü ve yenilikçi çözümler sunmaya devam etmek. Global
+              Sektörde öncü ve yenilikçi çözümler sunmak. Global
               standartlarda hizmet kalitesiyle müşterilerimizin güvenilir iş
               ortağı olmak ve sürdürülebilir değer yaratmak.
             </p>
