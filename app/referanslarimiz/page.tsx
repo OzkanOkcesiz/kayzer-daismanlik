@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const references = [
   {
     name: "Pizzzen Sınırsız Pizza",
-    image: "/images/references/restaurant-1.jpg",
+    image: "/images/references/pizzen.jpeg",
     description: "Konsept geliştirme, personel eğitimi, menü hazırlık, reçete hazırlık, cost control hizmetleri gibi temel hizmetlerin hepsini sağladığımız bir işletme.",
     duration: "12 ay",
     type: "restaurant",
@@ -24,6 +24,13 @@ const references = [
     image: "/images/references/bistro-1.jpg",
     description: "Personel Eğitimi, reçete hazırlık, cost control ve restoran hijyen denetimi gibi temel hizmetleri sağladık.",
     duration: "6 ay",
+    type: "restaurant",
+  },
+  {
+    name: "Gönül Dağı Kır Bahçesi",
+    image: "/images/references/gonuldagı.jpeg",
+    description: "İşletmenin tüm süreçlerinde danışmanlık hizmeti verdik. Menü planlaması, personel yönetimi, maliyet analizi ve operasyonel süreçlerin iyileştirilmesinde çözüm ortağı olduk.",
+    duration: "12 ay",
     type: "restaurant",
   },
 ];
@@ -43,10 +50,10 @@ export default function ReferencesPage() {
       {/* Referanslar Grid */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {references.map((reference, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className="relative h-64">
+                <div className="relative h-48">
                   <Image
                     src={reference.image}
                     alt={reference.name}
@@ -55,10 +62,10 @@ export default function ReferencesPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-semibold mb-3 text-brown-800">
+                  <h3 className="text-xl font-semibold mb-3 text-brown-800">
                     {reference.name}
                   </h3>
-                  <p className="text-brown-600 mb-4 text-lg">
+                  <p className="text-brown-600 mb-4">
                     {reference.description}
                   </p>
                 </div>
