@@ -141,14 +141,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Neden Biz Section */}
+      {/* Neden Biz Section - Geçici olarak gizlendi
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-16 text-brown-900">
             Neden Bizi Tercih Etmelisiniz?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Özellik 1 */}
             <div className="text-center">
               <div className="text-4xl font-bold text-brown-600 mb-4">15+</div>
               <h3 className="text-lg font-semibold mb-2 text-brown-800">
@@ -159,7 +158,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Özellik 2 */}
             <div className="text-center">
               <div className="text-4xl font-bold text-brown-600 mb-4">200+</div>
               <h3 className="text-lg font-semibold mb-2 text-brown-800">
@@ -170,7 +168,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Özellik 3 */}
             <div className="text-center">
               <div className="text-4xl font-bold text-brown-600 mb-4">50+</div>
               <h3 className="text-lg font-semibold mb-2 text-brown-800">
@@ -181,7 +178,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Özellik 4 */}
             <div className="text-center">
               <div className="text-4xl font-bold text-brown-600 mb-4">24/7</div>
               <h3 className="text-lg font-semibold mb-2 text-brown-800">
@@ -194,6 +190,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-brown-900 text-white">
