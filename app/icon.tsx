@@ -14,18 +14,23 @@ export default async function Icon() {
     (
       <div
         style={{
-          fontSize: 24,
-          background: "#43302b",
           width: "100%",
           height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          color: "white",
-          borderRadius: "50%",
+          background: "white",
         }}
       >
-        K
+        <img
+          src={new URL("/public/images/logos/kayzer.png", import.meta.url).toString()}
+          alt="Kayzer Danışmanlık"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
+        />
       </div>
     ),
     {
