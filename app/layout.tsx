@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -6,6 +6,12 @@ import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
 
 export const metadata: Metadata = {
   title: {
@@ -19,21 +25,6 @@ export const metadata: Metadata = {
   keywords: ["danışmanlık", "kurumsal", "profesyonel", "hizmet", "çözüm", "iş", "strateji"],
   referrer: "origin-when-cross-origin",
   themeColor: "#43302b",
-  colorScheme: "light",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
-  icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
-    apple: "/apple-icon.png",
-    other: {
-      rel: "apple-touch-icon-precomposed",
-      url: "/apple-icon.png",
-    },
-  },
 };
 
 export default function RootLayout({
@@ -43,6 +34,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className={inter.className}>
         <Toaster 
           position="bottom-right"

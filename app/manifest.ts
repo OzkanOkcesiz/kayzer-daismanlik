@@ -8,8 +8,18 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
-    theme_color: "#ffffff",
+    theme_color: "#43302b",
     icons: [
+      {
+        src: "/images/logos/kayzer.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        src: "/images/logos/kayzer.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
       {
         src: "/images/logos/kayzer.png",
         sizes: "192x192",
